@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="items">
+      <div class="item_date">
+        <div>
+          우리 만난지
+          <div class="date" id="date">
+            며칠
+          </div>
+        </div>
+      </div>
+      <div class="anniversary">
+        <div class="anniversary_calc">
+          기념일 계산
+        </div>
+        <div class="anniversary__dates">
+
+          <div class="date__100 dates">
+            <span>100일</span>
+            <span id="date100" class="injectedDate"></span>
+          </div>
+
+          <div class="date__200 dates">
+            <span>200일</span>
+            <span id="date200" class="injectedDate"></span>
+          </div>
+
+          <div class="date__1year dates">
+            <span>1년</span>
+            <span id="date365" class="injectedDate"></span>
+          </div>
+
+          <div class="date__500 dates">
+            <span>500일</span>
+            <span id="date500" class="injectedDate"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="button" onclick="calcDate()">버튼</div>
+  </div>
+  <script src="test.js" charset="utf-8"></script>
+</body>
+</html>
