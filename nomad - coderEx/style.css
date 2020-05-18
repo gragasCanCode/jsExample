@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.container{
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.clock{
+  box-sizing: border-box;
+  height: 200px;
+  font-weight: bold;
+  font-size: 7rem;
+  color:white;
+  padding: 44px 0;
+}
+
+.clock h1{
+  text-align: center;
+}
+
+.greetings{
+  text-align: center;
+  font-size: 1.8rem;
+  color:white;
+}
+
+.form input{ 
+  box-sizing: border-box;
+  width: 300px;
+  text-align: center;
+  background: none;
+  border: none;
+  color: white;
+  padding-bottom:10px;
+  font-size:1.5rem;
+  margin: 0 100px;
+}
+
+.form input::placeholder{
+  color:white;
+  opacity: 0.5;
+}
+
+.form input:focus{
+  outline: none;
+}
+
+.form .line{
+  border-top: 1px solid white;
+  width: 300px;
+  margin: 0 auto;
+}
+/* for js */
+.form,
+.greetings{
+  box-sizing: border-box;
+  height: 100px;
+  display: none;
+}
+
+.showing{
+  display: block;
+}
+
+.bgImage{
+  width: 100%;
+  height: 100%;
+  animation: fadeIn .5s linear;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
